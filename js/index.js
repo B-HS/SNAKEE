@@ -102,19 +102,19 @@ function snake(){
     }
 
     }
-        //reset
-        function resnake(e){
-            if(e.keyCode == "32"){
-            x = blockSize*1
-            y = blockSize*1
-            genFood()
-            vx = 0
-            vy = 0
-            speed = 15
-            tail = []
-            gameOver = false
-            snake()
-        }
+    //reset
+    function resnake(e){
+        if(e.keyCode == "32"){
+        x = blockSize*1
+        y = blockSize*1
+        genFood()
+        vx = 0
+        vy = 0
+        speed = 15
+        tail = []
+        gameOver = false
+        snake()
+    }
 
 }
 
