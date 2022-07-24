@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <nav class="navbar bg-light">
+            <div>
+                <img class="btn" src="./imgs/menu.jpg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" width="60" height="40" style="filter: invert(100%)" />
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <p>Try scrolling the rest of the page to see this option in action.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="navbar-brand" href="#">
+                    <h1>Snake !</h1>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="imgs/login-f.jpg" width="40" height="40" />
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="containe">
+            <div class="containe__status">
+                <div class="containe__status__menu">
+                    <h4>Consummed</h4>
+                    <span id="consu"></span>
+                </div>
+                <div class="containe__status__menu">
+                    <h3>Score</h3>
+                    <span id="score">Score</span>
+                </div>
+
+                <div class="containe__status__menu">
+                    <h3>Current Rank</h3>
+                    <ul class="ranking">
+                        <li>dummy</li>
+                        <li>dummy</li>
+                        <li>dummy</li>
+                        <li>dummy</li>
+                        <li>dummy</li>
+                        <li>dummy</li>
+                        <li>dummy</li>
+                        <li>dummy</li>
+                        <li>dummy</li>
+                        <li>dummy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <canvas id="canvas"></canvas>
+            <div class="containe__status">
+                <div class="containe__status__menu">
+                    <h3>Restart</h3>
+                    <span>Press Spacebar</span>
+                </div>
+                <div class="containe__status_menu">
+                    <h2>RANK</h2>
+                    <span>dummy</span>
+                </div>
+                <div class="container__status__menu">
+                    <h3>Max. P</h3>
+                    <span>dummy</span>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </body>
+</html>

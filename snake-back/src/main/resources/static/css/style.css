@@ -1,0 +1,49 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: gray;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    padding: 0.5rem 10rem;
+}
+
+.containe {
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containe__status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.521);
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 10vw !important;
+    height: 50vh;
+}
+
+.containe__status__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.ranking {
+    list-style: none;
+    padding: 0.5em;
+}
