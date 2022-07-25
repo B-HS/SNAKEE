@@ -13,13 +13,13 @@ public interface SnakeService {
 
     default Snake dtoToEntity(SnakeDTO dto) {
         Snake entity = Snake.builder().pid(dto.getPid()).name(dto.getName()).email(dto.getEmail())
-                .topconsum(dto.getTopconsum()).build();
+                .topconsum(dto.getTopconsum()).password(dto.getPassword()).build();
         return entity;
     }
 
     default SnakeDTO entityToDTO(Snake entity) {
         SnakeDTO dto = SnakeDTO.builder().pid(entity.getPid()).name(entity.getName()).email(entity.getEmail())
-                .topconsum(entity.getTopconsum()).lastLog(entity.getLastLog()).build();
+                .topconsum(entity.getTopconsum()).password(entity.getPassword()).lastLog(entity.getLastLog()).build();
         return dto;
 
     }

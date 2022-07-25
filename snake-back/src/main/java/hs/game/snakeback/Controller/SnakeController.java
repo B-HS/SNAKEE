@@ -18,7 +18,6 @@ public class SnakeController {
     private final SnakeService service;
     @PostMapping("/register")
     void register(SnakeDTO dto){
-        
         log.info(service.register(dto));
     }
 }

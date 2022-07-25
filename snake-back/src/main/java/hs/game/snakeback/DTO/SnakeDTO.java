@@ -16,6 +16,7 @@ public class SnakeDTO {
     private String name;
     private String email;
     private Long topconsum;
+    private String password;
     private LocalDateTime regDate;
     private LocalDateTime lastLog;
 
