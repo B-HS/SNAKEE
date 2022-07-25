@@ -4,7 +4,8 @@ import hs.game.snakeback.DTO.SnakeDTO;
 import hs.game.snakeback.Entity.Snake;
 
 public interface SnakeService {
-    // Long register(SnakeDTO dto);
+    String register(SnakeDTO dto);
+    // String login(SnakeDTO dto);
 
     // void valiPid(SnakeDTO dto);
 
@@ -18,7 +19,7 @@ public interface SnakeService {
 
     default SnakeDTO entityToDTO(Snake entity) {
         SnakeDTO dto = SnakeDTO.builder().pid(entity.getPid()).name(entity.getName()).email(entity.getEmail())
-                .topconsum(entity.getTopconsum()).build();
+                .topconsum(entity.getTopconsum()).lastLog(entity.getLastLog()).build();
         return dto;
 
     }

@@ -1,5 +1,7 @@
 package hs.game.snakeback.DTO;
 
+import java.time.LocalDateTime;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,5 +16,7 @@ public class SnakeDTO {
     private String name;
     private String email;
     private Long topconsum;
+    private LocalDateTime regDate;
+    private LocalDateTime lastLog;
 
 }

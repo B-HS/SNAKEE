@@ -5,6 +5,7 @@ body {
     background-color: gray;
     text-align: center;
     overflow: hidden;
+
 }
 
 .navbar-brand {
@@ -25,6 +26,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 1920px;
+    gap: 10px;
 }
 
 .containe__status {
